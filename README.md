@@ -66,7 +66,7 @@ DeviceProcessEvents
    
 
 3. **🌐 Network Check:**
-   - **Observed Behavior:** I pivoted to the `DeviceProcessEvents` table to see if we could see anything that was suspicious around the time the port scan started. We noticed a PowerShell script named `portscan.ps1` launched at `2025-01-06T06:37:00.774381Z`.
+   - **Observed Behavior:** I pivoted to the `DeviceProcessEvents` table to see if we could see anything that was suspicious around the time the port scan started. We noticed a PowerShell script named `portscan.ps1` launched at `2025-04-22T04:36:55.6630557Z`.
 
    **Detection Query (KQL):**
 ```kql
