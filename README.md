@@ -44,7 +44,8 @@ DeviceProcessEvents
    | order by ConnectionCount
    ```
 
-![Screenshot 2025-01-06 104150](https://github.com/user-attachments/assets/2eb708ed-7191-4219-b1a8-7fd416eee0c2)
+<img width="928" alt="image" src="https://github.com/user-attachments/assets/1f025cd1-75d8-4b59-bb58-80bc2373f573" />
+
 
 
 2. **⚙️ Process Analysis:**
@@ -52,13 +53,14 @@ DeviceProcessEvents
 
    **Detection Query (KQL):**
    ```kql
-   let IPInQuestion = "10.0.0.5";
-   DeviceNetworkEvents
-   | where ActionType == "ConnectionFailed"
-   | where LocalIP == IPInQuestion
-   | order by Timestamp desc
+ let IPInQuestion = "10.0.0.5";
+DeviceNetworkEvents
+|where ActionType == "ConnectionFailed"
+|where LocalIP == IPInQuestion
+|order by Timestamp
    ```
-![Screenshot 2025-01-06 110119](https://github.com/user-attachments/assets/0a413b76-a739-4779-ac8a-aa3cd4a8ff9e)
+<img width="926" alt="image" src="https://github.com/user-attachments/assets/d12db741-e923-421b-b3be-8718e7055908" />
+
 
    
 
