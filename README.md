@@ -59,7 +59,8 @@ DeviceProcessEvents
    | where LocalIP == IPInQuestion
    | order by Timestamp desc
    ```
-![Screenshot 2025-01-06 110119](https://github.com/user-attachments/assets/0a413b76-a739-4779-ac8a-aa3cd4a8ff9e)
+<img width="921" alt="image" src="https://github.com/user-attachments/assets/cf991b54-19ba-496d-9a0a-c12a08343ac4" />
+
 
 
    
@@ -69,15 +70,16 @@ DeviceProcessEvents
 
    **Detection Query (KQL):**
 ```kql
-let VMName = "windows-target-1";
-let specificTime = datetime(2025-01-06T06:37:00.774381Z);
+let VMName = "windows-hammed";
+let specificTime = datetime(2025-04-22T04:36:55.6630557Z);
 DeviceProcessEvents
 | where Timestamp between ((specificTime - 10m) .. (specificTime + 10m))
 | where DeviceName == VMName
 | order by Timestamp desc
 | project Timestamp, FileName, InitiatingProcessCommandLine
 ```
-![Screenshot 2025-01-13 161326](https://github.com/user-attachments/assets/ad26dcfb-2c43-4674-8a14-f926415d9ee6)
+<img width="922" alt="image" src="https://github.com/user-attachments/assets/40c583dd-d6d4-4f4e-ac1e-fb6555a8a107" />
+
 
 5. **📝 Response:**
    - We observed the port scan script was launched by the SYSTEM account. This is not expected behavior and it is not something that was setup by the admins. I isolated the device and ran a malware scan. The malware scan produced no results, so out of caution, I kept the device isolated and put in a ticket to have it re-image/rebuilt. Shared findings with the manager, highlighting automated archive creation. Awaiting further instructions.
