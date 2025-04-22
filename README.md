@@ -115,18 +115,18 @@ DeviceProcessEvents
 ---
 
 ## Created By:
-- **Author Name**: Trevino Parker
-- **Author Contact**: https://www.linkedin.com/in/trevinoparker/
-- **Date**: Jan 2025
+- **Author Name**: Hammed Akintola
+- **Author Contact**: https://www.linkedin.com/in/hammed-akintola-215b7a282/
+- **Date**: April 2025
 
 ## Validated By:
 - **Reviewer Name**: Josh Madakor
 - **Reviewer Contact**: https://www.linkedin.com/in/joshmadakor/
-- **Validation Date**: Jan 2025
+- **Validation Date**: april 2025
 
 ---
 
 ## Revision History:
 | **Version** | **Changes**                   | **Date**         | **Modified By**   |
 |-------------|-------------------------------|------------------|-------------------|
-| 1.0         | Initial draft                  | `Jan 2025`  | `Trevino Parker`   
+| 1.0         | Initial draft                  | `April 2025`  | `Hammed Akintola`   
