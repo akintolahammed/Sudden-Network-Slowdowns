@@ -53,13 +53,13 @@ DeviceProcessEvents
 
    **Detection Query (KQL):**
    ```kql
- let IPInQuestion = "10.0.0.5";
-DeviceNetworkEvents
-|where ActionType == "ConnectionFailed"
-|where LocalIP == IPInQuestion
-|order by Timestamp
+   let IPInQuestion = "10.0.0.5";
+   DeviceNetworkEvents
+   | where ActionType == "ConnectionFailed"
+   | where LocalIP == IPInQuestion
+   | order by Timestamp desc
    ```
-<img width="926" alt="image" src="https://github.com/user-attachments/assets/d12db741-e923-421b-b3be-8718e7055908" />
+![Screenshot 2025-01-06 110119](https://github.com/user-attachments/assets/0a413b76-a739-4779-ac8a-aa3cd4a8ff9e)
 
 
    
